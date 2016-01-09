@@ -22,7 +22,7 @@ Nthread=4;
 ##uncomment this line to run step 3!!!!
 #./santa.x $datadir goodinitial_980.csv $BETA $cool_speed 0.01 0.02 500 result.csv $Nthread
 
-#to get our leaderboard score 1.238507e13, run with cool_speed=1.00002 on 8 cores for 10 days,
+#to get our leaderboard score 1.238507e13, run with cool_speed=1.00002 on 4 cores for 10 days,
 #cool_speed=1.00002;
 #./santa.x $datadir goodinitial_980.csv $BETA $cool_speed 0.01 0.02 500 result.csv $Nthread
 #then continue the solution that is saved with score 1.238667e13 at beta=36.5 during the run, use speed=1.00005 to run for about another 5 days to converge.

@@ -4,10 +4,6 @@
  */
 
 
-// ADD LICENCE PART
-
-
-
 /********************************************* SHORT ALGORITHM DESCRIPTION *****************************************************
 
 -INPUT: Starting solution to the problem
