@@ -16,10 +16,10 @@ def weighted_trip_length(stops):
     dist = 0.0
     prev_stop = north_pole
     prev_weight = sum(weights)
-    for i in range(len(tuples)):        
-        dist = dist + haversine(tuples[i], prev_stop) * prev_weight
-        prev_stop = tuples[i]   
-        prev_weight = prev_weight - weights[i]
+    for i, tup in enumerate(tuples):        
+        dist += haversine(tup, prev_stop) * prev_weight
+        prev_stop = tup
+        prev_weight -= weights[i]
     return dist
 
 def weighted_reindeer_weariness(all_trips):
@@ -31,7 +31,7 @@ def weighted_reindeer_weariness(all_trips):
     dist = 0
     for t in uniq_trips:
         this_trip = all_trips[all_trips.TripId==t]
-        dist = dist + weighted_trip_length(this_trip);
+        dist += weighted_trip_length(this_trip);
     
     return dist    
 
